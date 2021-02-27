@@ -7,19 +7,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
-# Display one image
-def display_one(a, title1 = "Original"):
-    plt.imshow(a), plt.title(title1)
-    plt.xticks([]), plt.yticks([])
-    plt.show()
-
-# Display two images
-def display(a, b, title1 = "Original", title2 = "Edited"):
-    plt.subplot(121), plt.imshow(a), plt.title(title1)
-    plt.xticks([]), plt.yticks([])
-    plt.subplot(122), plt.imshow(b), plt.title(title2)
-    plt.xticks([]), plt.yticks([])
-    plt.show()
+class config:
+    data_path = "./data/processed/train"
+    test_data_path = "./data/processed/test"
+    should_load = True
+    model_path = "./models"
+    load_model = "denoiser_50_256.pb"
+    model_name = "denoiser_{}_{}.pb" # epochs, img_shape
 
 def display_three(a, b, c, title1="Original", title2="Pred", title3="GroundTruth"):
     plt.subplot(1, 3, 1), plt.imshow(a), plt.title(title1)
@@ -29,17 +23,6 @@ def display_three(a, b, c, title1="Original", title2="Pred", title3="GroundTruth
     plt.subplot(1, 3, 3), plt.imshow(c), plt.title(title3)
     plt.xticks([]), plt.yticks([])
     plt.show()
-
-def display_data_point(x):
-    display(x[0], x[1])
-
-class config:
-    data_path = "./data/processed/train"
-    test_data_path = "./data/processed/test"
-    should_load = True
-    model_path = "./models"
-    load_model = "denoiser_50_256.pb"
-    model_name = "denoiser_{}_{}.pb" # epochs, img_shape
 
 def sort_by_num(x):
     return int(x[x.find("_")+1:x.find(".")])
