@@ -8,11 +8,11 @@ Dataset uses 3 kinds of noise: gausisan, salt-pepper, and spceckled noise.
 Images are 256 x 256.
 All of the below images were in the seperate testing dataset. 
 
-![example_1 image](https://raw.githubusercontent.com/danielkopp4/NoiseRemover/main/examples/ex_1.png?token=AGFMV654PCCMNUPXAEE6MXTAHHPXG)
+![example_1 image](https://github.com/danielkopp4/NoiseRemover/blob/main/examples/ex_1.png?raw=true)
 
-![example_2 image](https://raw.githubusercontent.com/danielkopp4/NoiseRemover/main/examples/ex_2.png?token=AGFMV6YAT2POBPZCOBVNBD3AHHQBY)
+![example_2 image](https://github.com/danielkopp4/NoiseRemover/blob/main/examples/ex_2.png?raw=true)
 
-![example_3 image](https://raw.githubusercontent.com/danielkopp4/NoiseRemover/main/examples/ex_3.png?token=AGFMV63266MP42ZSU6DQEG3AHHQCM)
+![example_3 image](https://github.com/danielkopp4/NoiseRemover/blob/main/examples/ex_3.png?raw=true)
 
 ## Pretrained models
 
