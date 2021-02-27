@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/Users/danielkopp/Documents/projects/2021/noise_remover/noise_env/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
